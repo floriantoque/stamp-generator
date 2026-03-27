@@ -1,0 +1,22 @@
+[project]
+name = "stamp-generator"
+version = "0.1.0"
+description = "Generate rubber-stamp-style PNG images from the command line."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = [
+    "cyclopts",
+    "numpy",
+    "pillow",
+]
+
+[project.scripts]
+stamp-generator = "stamp_generator.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/stamp_generator"]
