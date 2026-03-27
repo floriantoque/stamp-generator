@@ -6,10 +6,10 @@ Generate rubber-stamp-style PNG images from the command line.
 
 ```bash
 # From GitHub (no install needed)
-uvx --from git+https://github.com/YOUR_USER/stamp-generator stamp-generator 'HELLO;WORLD'
+uvx --from git+https://github.com/floriantoque/stamp-generator stamp-generator 'HELLO;WORLD'
 
 # Or install locally
-uv pip install git+https://github.com/YOUR_USER/stamp-generator
+uv pip install git+https://github.com/floriantoque/stamp-generator
 stamp-generator 'APPROVED' --color '#1E90FF'
 ```
 
